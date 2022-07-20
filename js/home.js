@@ -5,15 +5,45 @@ function decimeNombre (){
     let resultado = 'Hola ' + nombreUsuario
 
     return resultado
-
-    
 }
 
 console.log(decimeNombre())
 
 
+function cantidadPax () {
 
-function cantidad () {
+    let mensaje
+    let cuenta
+    let pasajeros = parseInt(prompt("Cantidad Pasajeros "))
+       
+
+    if (pasajeros >= 4) {
+        cuenta = (pasajeros *500) - (((pasajeros * 500) * 25) /100)
+        mensaje = "Has ingresado " + pasajeros + " pasajeros. Tienes descuento de 25%. El total a pagar es " + cuenta
+        
+
+    }
+    else {
+        cuenta = pasajeros * 500
+        mensaje = "Has ingresado " + pasajeros + " pasajeros. No tienes descuento de 25% El total a pagar es " + cuenta
+    }
+
+    return mensaje
+    
+    
+}
+
+console.log (cantidadPax())
+
+
+
+
+
+
+
+
+
+/* function cantidad () {
 
     adultos = parseInt (prompt ("Ingresar cantidad Adultos"))
 
@@ -26,7 +56,7 @@ function cantidad () {
  
 }
 
-console.log(cantidad())
+console.log(cantidad()) */ 
 
 
 
